@@ -10,13 +10,8 @@ server = true
 bootstrap_expect = 1
 ui = true
 
-bind_addr = "0.0.0.0"
+bind_addr = "{{ GetPrivateInterfaces | attr \"address\" }}"
 client_addr = "0.0.0.0"
-
-# When the os has multiple NICs we need to tell
-# Consul which to use for local advertise
-advertise_addr = "10.15.0.200"
-#advertise_addr = "192.168.87.29"
 
 ports {
   grpc = 8502

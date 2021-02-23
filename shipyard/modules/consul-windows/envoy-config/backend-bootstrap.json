@@ -1,6 +1,6 @@
 {
   "admin": {
-    "access_log_path": "c:/tmp/backend-access.log",
+    "access_log_path": "backend-access.log",
     "address": {
       "socket_address": {
         "address": "127.0.0.1",
@@ -9,8 +9,8 @@
     }
   },
   "node": {
-    "cluster": "windows-service",
-    "id": "windows-service-1-sidecar-proxy",
+    "cluster": "backend-service",
+    "id": "backend-1-sidecar-proxy",
     "metadata": {
       "namespace": "default",
       "envoy_version": "1.14.5"

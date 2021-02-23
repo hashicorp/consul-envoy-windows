@@ -4,8 +4,8 @@ exec_local "consul-server" {
   cmd = "${file_dir()}\\binaries\\consul.exe"
   args = [ 
     "agent",
-    "--config-file",
-    "${file_dir()}\\config\\consul-server.hcl"
+    "--config-dir",
+    "${file_dir()}\\consul-server-config"
   ]
 
   daemon = true
