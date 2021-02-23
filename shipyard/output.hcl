@@ -3,5 +3,5 @@ output "KUBECONFIG" {
 }
 
 output "CONSUL_HTTP_ADDR" {
-  value = "http://localhost:8500"
+  value = "http://127.0.0.1:18500"
 }

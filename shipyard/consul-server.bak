@@ -1,0 +1,40 @@
+# Consul server for DC1 / primary DC
+container "consul_dc1" {
+  image   {
+    name = "consul:1.9.3"
+  }
+
+  command = ["agent", "-config-file=/config/dc1.hcl"]
+
+  volume {
+    source      = "./config/consul-server.hcl"
+    destination = "/config/dc1.hcl"
+  }
+
+  # Local network
+  network {
+    name = "network.dc1"
+    # If manually setting IP addresses work from the back of 
+    # the block to avoid conflicts.
+    # Docker always assigns from the begining of the block
+    ip_address = "10.15.0.200"
+  }
+
+  port {
+    host = 8500
+    remote = 8500
+    local = 8500
+  }
+  
+  port {
+    host = 8300
+    remote = 8300
+    local = 8300
+  }
+  
+  port {
+    host = 8301
+    remote = 8301
+    local = 8301
+  }
+}
