@@ -1,4 +1,4 @@
-data_dir = "/tmp/"
+data_dir = "c:\\temp"
 log_level = "DEBUG"
 node_name = "server"
 
