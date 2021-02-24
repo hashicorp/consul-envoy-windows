@@ -1,4 +1,4 @@
-data_dir = "c:\\temp"
+data_dir = "#{{ .Vars.data_dir}}"
 log_level = "DEBUG"
 node_name = "server"
 
