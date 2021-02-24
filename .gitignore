@@ -1,2 +1,3 @@
 binaries/
-shipyard.exe
+*.exe
+*.log
