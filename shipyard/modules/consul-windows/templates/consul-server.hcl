@@ -1,4 +1,4 @@
-data_dir = "#{{ .Vars.data_dir}}"
+data_dir = "#{{ .Vars.data_dir | js}}"
 log_level = "DEBUG"
 node_name = "server"
 

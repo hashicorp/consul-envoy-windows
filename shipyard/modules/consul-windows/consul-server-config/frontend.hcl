@@ -1,8 +1,7 @@
 service {
   name = "frontend"
   id = "frontend-1"
-  port = 8500
-  tags = ["v1"]
+  port = 9090
 
   connect { 
     sidecar_service {
