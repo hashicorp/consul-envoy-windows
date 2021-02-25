@@ -1,5 +1,6 @@
 kind = "service-resolver"
 name = "backend"
+DefaultSubset = "v1"
 Subsets = {
   "v1" = {
     Filter = "Service.Meta.version == v1"
