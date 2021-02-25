@@ -1,5 +1,6 @@
 //
 // Generate the Consul server configuration.
+// For demo purposes we are using the Server as Client too.
 //
 template "consul_config" {
   source = file("${file_dir()}/templates/consul-server.hcl")
