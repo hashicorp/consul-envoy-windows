@@ -55,3 +55,6 @@ separate instances. Opening your browser in the frontend UI will execute a reque
 If you refresh this page, you will see requests being loadbalanced  
 
 ![](./images/frontend2.png)
+=======
+consul config write shipyard/consul-config/backend-splitter.hcl
+```
