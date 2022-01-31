@@ -2,8 +2,11 @@
 global:
   name: consul
 server:
-  replicas: 1
-  bootstrapExpect: 1
+  enabled: false
+externalServers:
+  enabled: true
+  hosts: 
+    - "10.15.0.200"
 controller:
   enabled: true
 ui:
@@ -13,3 +16,8 @@ connectInject:
   default: false  # true will inject by default, otherwise requires annotation
   centralConfig:
     enabled: "true"
+client:
+  join:
+    - "10.15.0.200"
+  exposeGossipPorts: true
+  extraEnvironmentVars: { "NODE": "kubernetes" }
