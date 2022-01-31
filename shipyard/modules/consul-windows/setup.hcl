@@ -3,7 +3,7 @@
 //
 exec_local "install" {
   cmd = "powershell.exe"
-  args = [ 
+  args = [
     "${file_dir()}/scripts/download_binaries.ps1"
   ]
 
