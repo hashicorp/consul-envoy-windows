@@ -15,7 +15,3 @@ consul config write shipyard/consul-config/backend-router.hcl
 ```shell
 consul config write shipyard/consul-config/backend-splitter.hcl
 ```
-
-```shell
-consul connect envoy -sidecar-for backend-1 -bootstrap
-```
