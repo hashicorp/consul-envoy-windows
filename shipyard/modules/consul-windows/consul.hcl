@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 //
 // Generate the Consul server configuration.
 // For demo purposes we are using the Server as Client too.
